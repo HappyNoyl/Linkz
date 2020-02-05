@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .short-info {
+            position: relative;
+            display: grid;
+            overflow: hidden;
+            height: 100vh;
+            margin: 0px;
+            
+            grid-template-columns: 1.5fr 1fr 1fr;
+            grid-template-rows: 3fr 4fr 1.6fr;
+            grid-template-areas: 
+            "photo name name"
+            "photo links links"
+            "about about about";
+        }
+
+        .photo-block {
+            grid-area: photo;
+            background: rgb(15, 69, 105);
+        }
+        .name-block {
+            grid-area: name;
+            background: rgb(17, 120, 189);
+        }
+        .about-me-block {
+            grid-area: about;
+            background: rgb(12, 32, 46);
+        }
+        .links-block {
+            grid-area: links;
+            background: rgb(8, 99, 160)
+        }
+    </style>
+</head>
+<body>
+    <div id="page1" class="short-info">
+        <div class="photo-block"></div>
+        <div class="name-block"></div>
+        <div class="about-me-block"></div>
+        <div class="links-block"></div>
+    </div>
+</body>
+</html>
