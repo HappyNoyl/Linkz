@@ -1,0 +1,22 @@
+ #page-gallery {
+     position: relative;
+     display: flex;
+     height: auto;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: crimson;
+ }
+
+ #page-gallery .photo {
+     background-color: blue;
+     margin: 8px;
+     border-radius: 8px;
+     padding: 8px;
+ }
+
+ #page-gallery .photo>div {
+     width: 200px;
+     height: 300px;
+     background: darkblue;
+ }
